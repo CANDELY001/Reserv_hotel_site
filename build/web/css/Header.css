@@ -1,0 +1,239 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jun 2, 2022, 11:29:41 PM
+    Author     : HP
+*/
+            @import url("https://fonts.googleapis.com/css2?family=Megrim&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300;1,300&display=swap");
+            @import "bourbon";
+            @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat+Alternates:ital,wght@0,200;0,300;0,400;1,100;1,200;1,300&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Nixie+One&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;800&family=Wallpoet&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;800&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Righteous&family=Wallpoet&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap");
+
+            body{
+                margin: 0;
+            }
+            header {
+                background-color:transparent;
+               top: 0;
+                max-height: 60px;
+                width: 100%;
+                z-index: 1000;
+                position: absolute;
+
+            }
+
+            header a{
+                float: left;
+                text-decoration: none;
+                color: white;
+                margin: 30px 10px;
+                transition: 0.3s ease;
+                display: inline;
+                font-size: 0.8em;
+                position: relative;
+            }
+
+            .logo a {
+                margin-top: 0;
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+
+            .navi-item {
+                margin-left: 15%;
+            }
+
+            .navi-item2 {
+                margin-left: 10%;
+            }
+
+            .navi-item a::before {
+                content: "";
+                position: absolute;
+                background-color: white;
+                width: 0;
+                height: 3px;
+                bottom: 0;
+                left: 0;
+                transition: 0.5s ease;
+            }
+
+            .navi-item a:hover:before {
+                width: 100%;
+                background-color: white;
+            }
+
+            .navi-item2 a::before {
+                content: "";
+                position: absolute;
+                background-color: white;
+                width: 0;
+                height: 3px;
+                bottom: 0;
+                left: 0;
+                transition: 1s ease;
+            }
+
+            .navi-item2 a:hover:before {
+                width: 100%;
+                background-color: white;
+                color: white;
+            }
+
+            .navi-item a img {
+                width: 17px;
+                height: 13px;
+            }
+
+            .overlay {
+                height: 0%;
+                width: 100%;
+                position: fixed;
+                z-index: 11000;
+                top: 0;
+                right: 0;
+                background-color: black;
+                background-color: rgba(0, 0, 0, 0.911);
+                overflow-y: hidden;
+                transition: 0.5s;
+            }
+
+            .overlay-content {
+                position: relative;
+                top: 5%;
+                width: 100%;
+                text-align: center;
+                margin-top: 30px;
+                left: 25%;
+            }
+            .overlay ul {
+                list-style: none;
+                position: absolute;
+            }
+
+            .overlay li a {
+                padding: 8px;
+                text-decoration: none;
+                font-size: 18px;
+                color: white;
+                transition: 0.3s;
+                margin-right: 30px;
+            }
+
+            .overlay a:hover,
+            .overlay a:focus {
+                color: rgb(114, 110, 108);
+            }
+
+            .overlay .closebtn {
+                position: absolute;
+                top: 10px;
+                right: 20px;
+                font-size: 40px;
+            }
+
+            header span {
+                visibility: hidden;
+            }
+            @media screen and (max-width: 900px) {
+                .navi-item a {
+                    display: none;
+                }
+
+                .navi-item2 a {
+                    display: none;
+                }
+                header span {
+                    float: right;
+                    display: inline;
+                    visibility: visible;
+                    color: white;
+                    margin-right: 15px;
+                }
+            }
+
+            @media screen and (max-height: 400px) {
+                .overlay {
+                    overflow-y: auto;
+                }
+
+                .overlay a {
+                    font-size: 20px;
+                }
+                .overlay .closebtn {
+                    font-size: 20px;
+                    top: 0;
+                    right: 15px;
+                }
+            }
+
+            #myBtn {
+                display: none;
+                position: fixed;
+                bottom: 20px;
+                right: 30px;
+                z-index: 99;
+                font-size: 18px;
+                border: none;
+                outline: none;
+                background-color: black;
+                color: white;
+                cursor: pointer;
+
+                border-radius: 4px;
+            }
+
+            .icon-scroll img {
+                width: 50px;
+                height: 50px;
+            }
+            #myBtn:hover {
+                background-color: #555;
+            }
+             .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+ 
+  text-decoration: none;
+}
+          header  .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+header .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+header  .dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  margin: 0;
+  text-align: left;
+}
+
+
+header .dropdown-content a:hover{
+    color: grey;
+}
+header .dropdown:hover .dropdown-content {
+    top:60px;
+  display: block;
+}
+
