@@ -1,0 +1,225 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jun 12, 2022, 5:20:29 PM
+    Author     : HP
+*/
+.sec2 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    top: 0;
+    align-content: center;
+}
+.sec2 video {
+    position: inherit;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 000;
+    object-fit: cover;
+}
+.sec2 .content h1 {
+    position: absolute;
+    z-index: 7;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 5em;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    font-weight: 500;
+    font-family: "Nixie One", cursive;
+    text-transform: uppercase;
+    top: 20%;
+    color: white;
+}
+.social {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social li {
+    list-style: none;
+}
+.social li a {
+    display: block;
+    margin-right: 20px;
+    filter: invert(1);
+    transform: scale(0.5);
+    transition: 1s;
+}
+.social li a:hover {
+    transform: scale(0.5) translateY(-15px);
+}
+/*::::::::::::::::::::::::::::Title::::::::::::::*/
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+.booking_info {
+    margin-top: 15px;
+    display: block;
+    text-align: center;
+    width: 768px;
+    margin: 0 auto;
+    position: relative;
+    position: sticky;
+    margin-top: -20px;
+    top: 0;
+    transition: width ease 1s;
+    z-index: 9999;
+}
+
+.booking_info.sticky {
+    width: 100%;
+    margin-top: -15px;
+    transition: width ease 2s;
+}
+
+
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*html{
+  font-family: 'Roboto',sans-serif;
+  font-size: 10px;
+}*/
+
+.sec3 {
+    width: 100%;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    padding: 0 1.5em;
+    flex-direction: column;
+}
+.blog-post {
+    margin-left: 40px;
+    width: 80rem;
+    height: 16rem;
+    padding: 5rem;
+    margin-top: 80px;
+    background-color: white;
+    box-shadow: 1 1.4rem 8rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 0.8rem;
+    margin-bottom: 80px;
+}
+.blog-post_img {
+    min-width: 25rem;
+    max-width: 25rem;
+    height: 18rem;
+    transform: translateX(-8rem);
+    position: relative;
+}
+.blog-post_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0.8rem;
+}
+.blog-post_img::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*  background: linear-gradient( to right, rgba(70, 58, 68, 0.8),rgba(57, 38, 65, 0.8));*/
+    box-shadow: 0.5rem 0.5rem 3rem 1px rgba(0, 0, 0, 0.5);
+    border-radius: 0.8rem;
+}
+.blog-post_date span {
+    display: block;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+.blog-post_title {
+    font-size: 1.1rem;
+    margin-top: 1rem 0 1.5rem;
+    text-transform: uppercase;
+    padding: 10px;
+    color: #424142;
+}
+.blog-post_text {
+    margin-bottom: 2.5rem;
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+.blog-post_cta {
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #fff;
+    background-image: linear-gradient(to right, #424142 0%, #070508 100%);
+    border-radius: 0.8rem;
+    text-decoration: none;
+}
+.blog-post_cta:hover {
+    background-image: linear-gradient(to right, #070508 0%, #424142 100%);
+}
+@media screen and (max-width: 1068px) {
+    .blog-post {
+        max-width: 50rem;
+        height: 19rem;
+    }
+    .blog-post_img {
+        min-width: 20rem;
+        max-width: 20rem;
+        height: 20rem;
+    }
+}
+@media screen and (max-width: 860px) {
+    .blog-post {
+        max-width: 40rem;
+        height: 30rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .blog-post {
+        padding: 2.5rem;
+        flex-direction: column;
+        max-width: 30rem;
+        height: 38rem;
+        margin-top: 25%;
+    }
+    .blog-post_img {
+        min-width: 100%;
+        max-width: 100%;
+        transform: translate(0, -8rem);
+    }
+}
+.property-social-icons {
+    width: 2em;
+    height: 2em;
+    color: red;
+    display: inline-block;
+    position: relative;
+    bottom: 0;
+    left: 75%;
+    -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
